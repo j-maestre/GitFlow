@@ -1,5 +1,5 @@
 name: main_workflow
-on: 
+on:
   push:
     branches:
       - nodejs_linter_job
@@ -10,4 +10,4 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Linter execution
-      uses: github/super-linter@v3 
+      uses: github/super-linter@v3
