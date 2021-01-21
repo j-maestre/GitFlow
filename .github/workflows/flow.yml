@@ -40,7 +40,7 @@ jobs:
   needs: [linter-execution ,test-execution]
   steps:
     - name: test env
-      uses: uses: adeloyedeji/github-actions-hello@v1.0
+      uses: adeloyedeji/github-actions-hello@v1.0
       env:
         DESTINATION_PERSON: 2DAW
       with: 
