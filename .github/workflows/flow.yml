@@ -16,7 +16,7 @@ jobs:
       - name: artifact_generated
         uses: actions/upload-artifact@v2
         with:
-          name: my-artifact
+          name: artifact_generated
           path: ./surge_app/build
   deploy_job:
     runs-on: ubuntu-latest
