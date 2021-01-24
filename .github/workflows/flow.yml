@@ -11,8 +11,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: build
-        run: npm install
-        run: npm run build
+        run: npm install && npm run build
         working-directory: ./surge_app
       - name: artifact_generated
         uses: actions/upload-artifact@v2
@@ -34,4 +33,3 @@ jobs:
             project: .
             login: ${{ secrets.surge_login }}
             token: ${{ secrets.surge_token }}
-            
