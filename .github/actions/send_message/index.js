@@ -18,4 +18,4 @@ try {
 } catch (error) {
   core.setFailed(error.message);
 }
-core.setOutput("message", "Mensaje enviado");
+core.setOutput("message", "Mensaje enviadoo");
