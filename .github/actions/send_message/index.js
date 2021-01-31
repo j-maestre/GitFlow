@@ -1,6 +1,6 @@
 const core = require("@actions/core");
 const TelegramBot = require("node-telegram-bot-api");
-// const github = require("@actions/github");
+const github = require("@actions/github");
 
 const token = core.getInput("token_bot"); //Token que le pasamos en el flow.yml como id del bot
 const bot = new TelegramBot(token, { polling: false });
