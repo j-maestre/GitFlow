@@ -13,6 +13,6 @@ jobs:
       - name: Send message
         uses: ./.github/actions/send_telegram_action
         with:
-          token_father: ${{ secrets.TELEGRAM_BOT_PRUEBA_TOKEN }}
+          token_bot: ${{ secrets.TELEGRAM_BOT_PRUEBA_TOKEN }}
           chatId: ${{ secrets.TELEGRAM_ID_CHAT_PRUEBA }}
           name: "Xema"

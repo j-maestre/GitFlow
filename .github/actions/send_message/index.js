@@ -3,9 +3,9 @@ const core = require("@actions/core");
 const TelegramBot = require('node-telegram-bot-api');
 const github = require("@actions/github") 
 
-const token = core.getInput("token_father");
+const token = core.getInput("token_bot"); //Token que le pasamos en el flow.yml como id del bot
 const bot = new TelegramBot(token, {polling: false});
-var chat_Id=core.getInput("chatId");
+var chat_Id=core.getInput("chatId"); //Token del grupo que le pasamos
 const name = core.getInput("name");
 const commit = github.context.payload;
 console.log("COOOMIIITTT");

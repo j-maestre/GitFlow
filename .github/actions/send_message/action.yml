@@ -1,0 +1,22 @@
+name: "Telegram bot message"
+description: "Enviar mensaje al grupo de telegram tras commit"
+
+inputs:
+  token_bot:
+    description: "Token del bot de telegram"
+    required: true
+  chatId:
+    description: "Id del chat de grupo"
+    required: true 
+  name:
+    description: "Nombre" 
+    required: true
+  
+
+outputs:
+  message:
+    description: "Response message"
+
+runs:
+  using: "node12"
+  main: "dist/index.js"
